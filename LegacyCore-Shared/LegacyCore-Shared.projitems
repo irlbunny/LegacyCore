@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>6732de22-9af4-4556-a77e-1d2d976281ff</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>LegacyCore</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Custom\CustomBeatmapDataSO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Custom\CustomLevelCollectionForGameplayMode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Custom\CustomLevelCollectionsForGameplayModes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Custom\CustomLevelCollectionSO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Custom\CustomLevelInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Custom\CustomLevelSO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ProgressBar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SimpleJSON.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\IResetableSO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Plugin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\PoolSO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Loader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\LogUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\ReflectionUtil.cs" />
+  </ItemGroup>
+</Project>
